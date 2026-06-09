@@ -1,7 +1,7 @@
 <div align="center">
     <img width="100%" src="./assets/liminal.png">
     <p>
-    汎用 React UI コンポーネントライブラリ<br>    
+    宣言型 React UI コンポーネントライブラリ<br>    
     ミニマムなコンポーネントを組み合わせることで、柔軟に UI を構築できます。
     </p>
 </div>
