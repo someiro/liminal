@@ -7,6 +7,27 @@
 </div>
 
 ---
+# SetUp
+
+1. このリポジトリをクローンし、プロジェクトの `components` ディレクトリに配置します。
+2. アプリケーションのエントリーポイントで `global.css` をインポートします。
+```tsx
+import "@/components/liminal/global.css";
+```
+3. 必要なコンポーネントをインポートして使用します。
+```tsx
+import { Button, Text } from "@/components/liminal";
+
+export default function Page() {
+  return (
+    <Button>
+      <Text size="xl" weight="bold">Hello, liminal</Text>
+    </Button>
+  );
+}
+```
+
+---
 
 # General
 
