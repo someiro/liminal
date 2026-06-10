@@ -1,9 +1,5 @@
 <div align="center">
     <img width="100%" src="./assets/liminal.png">
-    <p>
-    宣言型 React UI ライブラリ<br>    
-    シンプルな組み立てコンポーネントによって、アプリケーション開発に集中することができます。
-    </p>
 </div>
 
 ---
