@@ -26,6 +26,9 @@ import Select from "./Select/Select";
 
 import Tabs from "./Tabs/Tabs";
 
+// Upload を使用するには : "npm install react-easy-crop"
+// import Upload from "./Upload/Upload";
+
 export {
   Button,
   Text,
@@ -44,5 +47,6 @@ export {
   Switch,
   Tabs,
   Radio,
-  Select
+  Select,
+  // Upload,
 };
