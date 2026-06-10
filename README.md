@@ -6,9 +6,9 @@
 # Setup
 
 1. このリポジトリをクローンし、プロジェクトの `components` ディレクトリに配置します。
-2. アプリケーションのエントリーポイントで `global.css` をインポートします。
+2. アプリケーションのエントリーポイントで `globals.css` をインポートします。
 ```tsx
-import "@/components/liminal/global.css";
+import "@/components/liminal/globals.css";
 ```
 3. 必要なコンポーネントをインポートして使用します。
 ```tsx
