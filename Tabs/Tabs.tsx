@@ -5,7 +5,7 @@ import { useState } from "react";
 
 type TabItem = {
   value: string;
-  label: string;
+  label: React.ReactNode;
   component: React.ReactNode;
 };
 
@@ -21,8 +21,8 @@ const Tabs = (props: TabsProps) => {
     <>
       <div className={styles.tabsContainer}>
         {props.tabs.map((tab) => (
-          <button 
-            key={tab.value} 
+          <button
+            key={tab.value}
             onClick={() => setNow(tab.value)}
             className={tab.value === now ? styles.select: undefined}
             >
@@ -32,7 +32,14 @@ const Tabs = (props: TabsProps) => {
       </div>
       <div className={styles.tabsItemContainer}>
         {props.tabs.map((tab) => (
-            tab.value === now ? <div key={tab.value}>{tab.component}</div>: null
+          <div
+            key={tab.value}
+            style={{
+              display: tab.value === now ? "block" : "none",
+            }}
+          >
+            {tab.component}
+          </div>
         ))}
       </div>
     </>
