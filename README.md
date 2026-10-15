@@ -4,13 +4,16 @@
 
 ---
 # Setup
-
-1. このリポジトリをクローンし、プロジェクトの `components` ディレクトリに配置します。
-2. アプリケーションのエントリーポイントで `globals.css` をインポートします。
+1. liminal で使用している `react-icons` をインストール
+```shell
+$ npm install react-icons --save
+```
+2. このリポジトリをクローンし、プロジェクトの `components` ディレクトリに配置します。
+3. アプリケーションのエントリーポイントで `globals.css` をインポートします。
 ```tsx
 import "@/components/liminal/globals.css";
 ```
-3. 必要なコンポーネントをインポートして使用します。
+4. 必要なコンポーネントをインポートして使用します。
 ```tsx
 import { Button, Text } from "@/components/liminal";
 
