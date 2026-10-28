@@ -19,9 +19,6 @@ const SideMenu = () => {
             <Link to="/components">要素</Link>
           </li>
           <li>
-            <Link to="/patterns">デザインパターン</Link>
-          </li>
-          <li>
             <Link to="/resources">リソース</Link>
           </li>
         </ul>

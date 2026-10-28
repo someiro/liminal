@@ -40,7 +40,7 @@ const Foundation = () => {
   return (
     <>
       <h3>導入</h3>
-      <Spacer size={8} />
+      <Spacer size={20} />
       <p>
         1. liminal では <code className="code">react-icons</code> <code className="code">react-easy-crop</code> を使用しています。事前にインストールしてください。
       </p>
