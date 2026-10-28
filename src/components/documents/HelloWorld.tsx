@@ -6,7 +6,7 @@ const HelloWorld = () => {
       <h2>liminal</h2>
       <Spacer size={5} />
 
-      <p>宣言型 React UI フレームワーク</p>
+      <p>宣言型 UI コンポーネントライブラリ</p>
       <hr />
       <h3>はじめに</h3>
       <Spacer size={8} />

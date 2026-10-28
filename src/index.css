@@ -112,7 +112,7 @@ tr:hover {
 }
 
 ul {
-  list-style-position: inside; 
+  list-style-position: inside;
 }
 
 ul {
@@ -125,10 +125,22 @@ ul li:not(:last-child) {
 }
 
 pre {
-  padding: 12px;
+  padding: 16px;
 }
+
+pre.shiki,
+pre.shiki code,
+pre.shiki span {
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    "Noto Sans Mono", monospace;
+  font-size: 0.95em;
+}
+
 .code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono",
+    "Noto Sans Mono", monospace;
   font-size: 0.9em;
   color: #000000;
   background-color: #ececec;

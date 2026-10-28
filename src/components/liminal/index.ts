@@ -25,9 +25,7 @@ import Radio from "./Radio/Radio";
 import Select from "./Select/Select";
 
 import Tabs from "./Tabs/Tabs";
-
-// Upload を使用するには : "npm install react-easy-crop"
-// import Upload from "./Upload/Upload";
+import Upload from "./Upload/Upload";
 
 export {
   Button,
@@ -48,5 +46,5 @@ export {
   Tabs,
   Radio,
   Select,
-  // Upload,
+  Upload,
 };
