@@ -43,7 +43,7 @@ const CodeExample = ({ code }: Props) => {
 
   return (
     <>
-      {"error" in (currentResult ?? {}) && (
+      {currentResult && "error" in currentResult && (
         <p role="alert">
           シンタックスハイライトに失敗しました: {currentResult.error}
         </p>
