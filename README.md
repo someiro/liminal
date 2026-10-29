@@ -1,6 +1,6 @@
 # liminal
 
-Reac と TypeScript を活用した、宣言型 UI コンポーネントライブラリです。  
+React と TypeScript を活用した、宣言型 UI コンポーネントライブラリです。  
 少ない記述でシンプルに UI を構築できます。
 
 ## 導入
