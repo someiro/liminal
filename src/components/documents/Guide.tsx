@@ -25,7 +25,7 @@ export default function App() {
       </Text>
       <p>これはコンポーネントを使った画面です。</p>
       <Button onClick={() => alert("ボタンが押されました")}>
-        押してみる
+        押す
       </Button>
     </main>
   );

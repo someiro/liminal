@@ -1,78 +1,50 @@
-# React + TypeScript + Vite
+# liminal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Reac と TypeScript を活用した、宣言型 UI コンポーネントライブラリです。  
+少ない記述でシンプルに UI を構築できます。
 
-Currently, two official plugins are available:
+## 導入
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. 必要なパッケージをインストール
 
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```shell
+$ npm install react-icons react-easy-crop
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. コンポーネントをコピー
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+このリポジトリの [`src/components/liminal/`](./src/components/liminal/) の中身を、
+利用するプロジェクトの `src/components/liminal/` にコピーします。
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 3. 共通CSSを読み込む
 
+プロジェクトの `src/main.tsx` に以下を追加します。
+
+```tsx
+import "./components/liminal/globals.css";
 ```
+
+### 4. コンポーネントを使う
+
+`src/App.tsx` などから必要なコンポーネントをインポートします。
+
+```tsx
+import { Button, Text } from "./components/liminal";
+
+export default function App() {
+  return (
+    <main>
+      <Text size="xl" weight="bold">
+        こんにちは、liminal！
+      </Text>
+      <p>これはコンポーネントを使った画面です。</p>
+      <Button onClick={() => alert("ボタンが押されました")}>
+        押す
+      </Button>
+    </main>
+  );
+}
+```
+
+## ライセンス
+MIT LICENSE
